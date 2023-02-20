@@ -10,8 +10,195 @@
 </head>
 
 <body>
+  <div id="floating-menu">
+    <div id="floating-title">Canapea Demo</div>
+
+    <div id="submenu-principal" class="submenu" style="display: block;">
+      <div id="submenu-title-principal" class="submenu-title">Alege ce doresti sa configurezi</div>
+      <div id="icon-holder-principal" class="icon-holder">
+        <div id="couch-left" class="icon-menu">
+          <p class="icon-text">Colt Stanga</p>
+          <img class="icon-image" src="public/dublu-intreg-stanga.png" alt="">
+        </div>
+        <div id="couch-right" class="icon-menu">
+          <p class="icon-text">Colt Dreapta</p>
+          <img class="icon-image" src="public/dublu-intreg-dreapta.png" alt="">
+        </div>
+        <div id="couch-parts" class="icon-menu">
+          <p class="icon-text">Module</p>
+          <img class="icon-image" src="public/module.png" alt="">
+        </div>
+        <div id="couch-mats" class="icon-menu">
+          <p class="icon-text">Materiale</p>
+          <img class="icon-image" src="public/color-palette.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="submenu-colt-stanga" class="submenu" style="display: none;">
+      <div id="submenu-title-colt-stanga" class="submenu-title">
+        <img src="public/arrow.png" alt="" class="back-arrow" id="back1">
+        <span class="back-text">Colt stanga</span>
+      </div>
+      <div id="icon-holder-colt-stanga" class="icon-holder">
+        <div id="stg-dublu-intreg" class="icon-menu" data-value="cornerDoubleFull">
+          <p class="icon-text">Dublu intreg</p>
+          <img class="icon-image" src="public/dublu-intreg-stanga.png" alt="">
+        </div>
+        <div id="stg-dublu-scurt" class="icon-menu"  data-value="cornerDoubleShort">
+          <p class="icon-text">Dublu scurt</p>
+          <img class="icon-image" src="public/dublu-scurt.png" alt="">
+        </div>
+        <div id="stg-simplu" class="icon-menu" data-value="cornerSimple">
+          <p class="icon-text">Simplu</p>
+          <img class="icon-image" src="public/simplu.png" alt="">
+        </div>
+        <div id="stg-simplu-intreg" class="icon-menu" data-value="cornerSimpleFull">
+          <p class="icon-text">Simplu intreg</p>
+          <img class="icon-image" src="public/simplu-intreg.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="submenu-colt-dreapta" class="submenu" style="display: none;">
+      <div id="submenu-title-colt-dreapta" class="submenu-title">
+        <img src="public/arrow.png" alt="" class="back-arrow" id="back2">
+        <span class="back-text">Colt dreapta</span>
+      </div>
+      <div id="icon-holder-colt-dreapta" class="icon-holder">
+        <div id="drpt-dublu-intreg" class="icon-menu" data-value="cornerDoubleFull">
+          <p class="icon-text">Dublu intreg</p>
+          <img class="icon-image" src="public/dublu-intreg-stanga.png" alt="" style="transform: scaleX(-1);">
+        </div>
+        <div id="drpt-dublu-scurt" class="icon-menu"  data-value="cornerDoubleShort">
+          <p class="icon-text">Dublu scurt</p>
+          <img class="icon-image" src="public/dublu-scurt.png" alt="" style="transform: scaleX(-1);">
+        </div>
+        <div id="drpt-simplu" class="icon-menu"  data-value="cornerSimple">
+          <p class="icon-text">Simplu</p>
+          <img class="icon-image" src="public/simplu.png" alt="" style="transform: scaleX(-1);">
+        </div>
+        <div id="drpt-simplu-intreg" class="icon-menu"  data-value="cornerSimpleFull">
+          <p class="icon-text">Simplu intreg</p>
+          <img class="icon-image" src="public/simplu-intreg.png" alt="" style="transform: scaleX(-1);">
+        </div>
+      </div>
+    </div>
+
+    <div id="submenu-module" class="submenu" style="display: none;">
+      <div id="submenu-title-module" class="submenu-title">
+        <img src="public/arrow.png" alt="" class="back-arrow" id="back3">
+        <span class="back-text">Module</span>
+      </div>
+      <div id="icon-holder-module" class="icon-holder">
+        <div id="mdl-cnt-1" class="icon-menu" data-value="1">
+          <p class="icon-text">1</p>
+          <img class="icon-image" src="public/module1.png" alt="">
+        </div>
+        <div id="mdl-cnt-2" class="icon-menu" data-value="2">
+          <p class="icon-text">2</p>
+          <img class="icon-image" src="public/module.png" alt="">
+        </div>
+        <div id="mdl-cnt-3" class="icon-menu" data-value="3">
+          <p class="icon-text">3</p>
+          <img class="icon-image" src="public/module3.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="submenu-materiale" class="submenu" style="display: none;">
+      <div id="submenu-title-materiale" class="submenu-title">
+        <img src="public/arrow.png" alt="" class="back-arrow" id="back4">
+        <span class="back-text">Materiale</span>
+      </div>
+      <div id="icon-holder-materiale" class="icon-holder">
+        <div id="mat-1" class="icon-menu"  data-value="matLeather1">
+          <p class="icon-text">Piele 1</p>
+          <img class="icon-image" src="public/leather1.jpg" alt="">
+        </div>
+        <div id="mat-2" class="icon-menu" data-value="matLeather2">
+          <p class="icon-text">Piele 2</p>
+          <img class="icon-image" src="public/leather2.jpg" alt="">
+        </div>
+        <div id="mat-3" class="icon-menu" data-value="matLinen1">
+          <p class="icon-text">Stofa 1</p>
+          <img class="icon-image" src="public/fabric1.jpg" alt="">
+        </div>
+        <div id="mat-4" class="icon-menu" data-value="matLinen2">
+          <p class="icon-text">Stofa 2</p>
+          <img class="icon-image" src="public/fabric2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="floating-footer">
+      Copyright Ixaria 2023. Toate drepturile rezervate.
+    </div>
+
+
+  </div>
+
   <div id="webGL"></div>
   <script src="public/bundle.js"></script>
+
+  <script>
+    document.getElementById("couch-left").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-colt-stanga").style.display = "block";
+    }
+
+    document.getElementById("couch-right").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "block";
+    }
+
+
+    document.getElementById("couch-parts").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-module").style.display = "block";
+    }
+
+    document.getElementById("couch-mats").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "block";
+    }
+
+    document.getElementById("back1").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
+
+    document.getElementById("back2").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
+
+    document.getElementById("back3").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
+
+    document.getElementById("back4").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
+
+  </script>
+
 </body>
 
 </html>

@@ -1,116 +1,207 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
-body { 
-  font-family: monospace;
-  margin: 0; 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
   font-size: 1.3rem;
   font-weight: normal;
 }
 
-canvas { 
-  display: block; 
+canvas {
+  display: block;
 }
 
-code {
-  font-family: Consolas,"courier new";
-  color: crimson;
-  background-color: #f1f1f1;
-  padding: 2px;
-}
-
-p {
-  overflow: scroll;
-}
-
-.float {
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-#iir{
-  display: flex;
-}
-.slider-holder{
+.icon-image {
   position: absolute;
-  margin: 20px;
-  font-size: 14px;
-}
-.float:hover {
-  cursor: pointer;
+  height: 40px;
+  left: 20px;
+  top: 7px;
 }
 
-.icon-float{
-	margin-top:18px;
-}
-.player-control{
+.icon-text {
+  font-size: 13px;
   position: absolute;
-  height: 100%;
+  bottom: -4px;
+  width: 100%;
+  text-align: center;
 }
-.slidecontainer{
-  position: relative;
-}
-#player{
-  position: fixed;
-  bottom: 0;
-  height: 10vh;
-  width: 70vw;
-  left: 15vw;
-}
-.webGL{
-  position: fixed;
+
+#webGL {
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.close-modal-btn {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-modal-btn:hover,
-.close-modal-btn:focus {
-  color: black;
-  text-decoration: none;
+.back-arrow {
+  width: 30px;
+  position: absolute;
+  top: -5px;
   cursor: pointer;
 }
 
-#webgl-error-message {
+.back-text {
+  position: absolute;
+  left: 42px;
+}
+
+#menu {
+  position: absolute;
+  z-index: 2;
+  line-height: 35px;
+  display: none;
+}
+
+.submenu {
+  width: calc(100% - 20px);
+  height: 70%;
+  position: absolute;
+  top: 55px;
+  margin-left: 10px;
+}
+
+#floating-footer {
+  position: absolute;
+  font-size: 12px;
+  bottom: 4px;
+  width: 100%;
   text-align: center;
-  background: #fff;
-  color: #000;
-  padding: 1.5em;
-  width: 400px;
-  margin: 5em auto 0;
+}
+
+.submenu-title {
+  font: caption;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  font-size: 18px;
+  left: 13px;
+}
+
+.icon-holder {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 40px;
+  text-align: center;
+}
+
+.icon-menu {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  outline: 0px solid #000;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(117 117 117);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(117,117,117,1);
+  box-shadow: 0px 0px 4px 0px rgb(117 117 117);
+}
+
+#floating-menu {
+  position: fixed;
+  width: 390px;
+  max-width: 100%;
+  height: 230px;
+  left: 0px;
+  bottom: 0px;
+  background: white;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 6px 0px rgb(227 227 227);
+  -moz-box-shadow: 0px 0px 6px 0px rgb(227 227 227);
+  box-shadow: 0px 0px 6px 0px rgb(227 227 227);
+}
+
+#floating-title {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 420px) {
+  #floating-menu {
+    left: 10px;
+    bottom: 10px;
+    border-radius: 18px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #webGL {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 230px);
+    top: 0;
+    left: 0;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three-full": "^28.0.2"
+    "three": "^0.150.1"
   },
   "devDependencies": {
     "prettier": "^2.0.4",

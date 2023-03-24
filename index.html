@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="static/styles/main.css">
-  <title>Three.JS-Webpack Boilerplate</title>
+  <title>Ixaria demo</title>
 </head>
 
 <body>
   <div id="floating-menu">
-    <div id="floating-title">Canapea Demo</div>
+    <div id="floating-title">Mobila Demo</div>
 
-    <div id="submenu-principal" class="submenu" style="display: block;">
+    <!-- <div id="submenu-principal" class="submenu" style="display: block;">
       <div id="submenu-title-principal" class="submenu-title">Alege ce doresti sa configurezi</div>
       <div id="icon-holder-principal" class="icon-holder">
         <div id="couch-left" class="icon-menu">
@@ -33,9 +33,9 @@
           <img class="icon-image" src="public/color-palette.png" alt="">
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div id="submenu-colt-stanga" class="submenu" style="display: none;">
+    <!-- <div id="submenu-colt-stanga" class="submenu" style="display: none;">
       <div id="submenu-title-colt-stanga" class="submenu-title">
         <img src="public/arrow.png" alt="" class="back-arrow" id="back1">
         <span class="back-text">Colt stanga</span>
@@ -58,8 +58,8 @@
           <img class="icon-image" src="public/simplu-intreg.png" alt="">
         </div>
       </div>
-    </div>
-
+    </div> -->
+<!-- 
     <div id="submenu-colt-dreapta" class="submenu" style="display: none;">
       <div id="submenu-title-colt-dreapta" class="submenu-title">
         <img src="public/arrow.png" alt="" class="back-arrow" id="back2">
@@ -83,9 +83,9 @@
           <img class="icon-image" src="public/simplu-intreg.png" alt="" style="transform: scaleX(-1);">
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div id="submenu-module" class="submenu" style="display: none;">
+    <!-- <div id="submenu-module" class="submenu" style="display: none;">
       <div id="submenu-title-module" class="submenu-title">
         <img src="public/arrow.png" alt="" class="back-arrow" id="back3">
         <span class="back-text">Module</span>
@@ -104,11 +104,11 @@
           <img class="icon-image" src="public/module3.png" alt="">
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div id="submenu-materiale" class="submenu" style="display: none;">
+    <div id="submenu-materiale" class="submenu">
       <div id="submenu-title-materiale" class="submenu-title">
-        <img src="public/arrow.png" alt="" class="back-arrow" id="back4">
+        <!-- <img src="public/arrow.png" alt="" class="back-arrow" id="back4"> -->
         <span class="back-text">Materiale</span>
       </div>
       <div id="icon-holder-materiale" class="icon-holder">
@@ -144,58 +144,58 @@
   <script src="public/bundle.js"></script>
 
   <script>
-    document.getElementById("couch-left").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "none";
-      document.getElementById("submenu-colt-stanga").style.display = "block";
-    }
+    // document.getElementById("couch-left").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "none";
+    //   document.getElementById("submenu-colt-stanga").style.display = "block";
+    // }
 
-    document.getElementById("couch-right").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "none";
-      document.getElementById("submenu-colt-dreapta").style.display = "block";
-    }
+    // document.getElementById("couch-right").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "none";
+    //   document.getElementById("submenu-colt-dreapta").style.display = "block";
+    // }
 
 
-    document.getElementById("couch-parts").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "none";
-      document.getElementById("submenu-module").style.display = "block";
-    }
+    // document.getElementById("couch-parts").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "none";
+    //   document.getElementById("submenu-module").style.display = "block";
+    // }
 
-    document.getElementById("couch-mats").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "none";
-      document.getElementById("submenu-materiale").style.display = "block";
-    }
+    // document.getElementById("couch-mats").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "none";
+    //   document.getElementById("submenu-materiale").style.display = "block";
+    // }
 
-    document.getElementById("back1").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "block";
-      document.getElementById("submenu-colt-stanga").style.display = "none";
-      document.getElementById("submenu-colt-dreapta").style.display = "none";
-      document.getElementById("submenu-module").style.display = "none";
-      document.getElementById("submenu-materiale").style.display = "none";
-    }
+    // document.getElementById("back1").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "block";
+    //   document.getElementById("submenu-colt-stanga").style.display = "none";
+    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
+    //   document.getElementById("submenu-module").style.display = "none";
+    //   document.getElementById("submenu-materiale").style.display = "none";
+    // }
 
-    document.getElementById("back2").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "block";
-      document.getElementById("submenu-colt-stanga").style.display = "none";
-      document.getElementById("submenu-colt-dreapta").style.display = "none";
-      document.getElementById("submenu-module").style.display = "none";
-      document.getElementById("submenu-materiale").style.display = "none";
-    }
+    // document.getElementById("back2").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "block";
+    //   document.getElementById("submenu-colt-stanga").style.display = "none";
+    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
+    //   document.getElementById("submenu-module").style.display = "none";
+    //   document.getElementById("submenu-materiale").style.display = "none";
+    // }
 
-    document.getElementById("back3").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "block";
-      document.getElementById("submenu-colt-stanga").style.display = "none";
-      document.getElementById("submenu-colt-dreapta").style.display = "none";
-      document.getElementById("submenu-module").style.display = "none";
-      document.getElementById("submenu-materiale").style.display = "none";
-    }
+    // document.getElementById("back3").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "block";
+    //   document.getElementById("submenu-colt-stanga").style.display = "none";
+    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
+    //   document.getElementById("submenu-module").style.display = "none";
+    //   document.getElementById("submenu-materiale").style.display = "none";
+    // }
 
-    document.getElementById("back4").onclick = (ev) => {
-      document.getElementById("submenu-principal").style.display = "block";
-      document.getElementById("submenu-colt-stanga").style.display = "none";
-      document.getElementById("submenu-colt-dreapta").style.display = "none";
-      document.getElementById("submenu-module").style.display = "none";
-      document.getElementById("submenu-materiale").style.display = "none";
-    }
+    // document.getElementById("back4").onclick = (ev) => {
+    //   document.getElementById("submenu-principal").style.display = "block";
+    //   document.getElementById("submenu-colt-stanga").style.display = "none";
+    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
+    //   document.getElementById("submenu-module").style.display = "none";
+    //   document.getElementById("submenu-materiale").style.display = "none";
+    // }
 
   </script>
 

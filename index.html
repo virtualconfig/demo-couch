@@ -10,6 +10,9 @@
 </head>
 
 <body>
+  <div id="loading-screen">
+    <lottie-player src="./public/assets/ixaria.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+  </div>
   <div id="floating-menu">
     <div id="floating-title">Mobila Demo</div>
 
@@ -108,23 +111,29 @@
 
     <div id="submenu-materiale" class="submenu">
       <div id="submenu-title-materiale" class="submenu-title">
+        <label for="models">Model 3D:</label>
+        <select id="models">
+          <option value="fotoliu-procesat.glb" selected>Fotoliu procesat - 30k</option>
+          <option value="fotoliu-original-100k.glb">Fotoliu original - 100k</option>
+          <option value="fotoliu-original-1m.glb">Fotoliu original - 1M</option>
+        </select>
         <!-- <img src="public/arrow.png" alt="" class="back-arrow" id="back4"> -->
-        <span class="back-text">Materiale</span>
+        <!-- <span class="back-text">Materiale</span> -->
       </div>
       <div id="icon-holder-materiale" class="icon-holder">
-        <div id="mat-1" class="icon-menu"  data-value="matLeather1">
+        <div id="mat-1" class="icon-menu"  data-value="piele1">
           <p class="icon-text">Piele 1</p>
           <img class="icon-image" src="public/leather1.jpg" alt="">
         </div>
-        <div id="mat-2" class="icon-menu" data-value="matLeather2">
+        <div id="mat-2" class="icon-menu" data-value="piele2">
           <p class="icon-text">Piele 2</p>
           <img class="icon-image" src="public/leather2.jpg" alt="">
         </div>
-        <div id="mat-3" class="icon-menu" data-value="matLinen1">
+        <div id="mat-3" class="icon-menu" data-value="stofa1">
           <p class="icon-text">Stofa 1</p>
           <img class="icon-image" src="public/fabric1.jpg" alt="">
         </div>
-        <div id="mat-4" class="icon-menu" data-value="matLinen2">
+        <div id="mat-4" class="icon-menu" data-value="stofa2">
           <p class="icon-text">Stofa 2</p>
           <img class="icon-image" src="public/fabric2.jpg" alt="">
         </div>
@@ -141,6 +150,7 @@
   </div>
 
   <div id="webGL"></div>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="public/bundle.js"></script>
 
   <script>

@@ -5,7 +5,13 @@ import { HDRCubeTextureLoader } from 'three/examples/jsm/loaders/HDRCubeTextureL
 
 class LoaderService {
     constructor() {
-        this.loadingManager = new LoadingManager();
+        this.loadingManager = new LoadingManager((onLoad) => {
+            setTimeout(()=>{
+                document.getElementById("loading-screen").style.display = "none"
+            },500)
+            
+        }, (onProgress) => {
+        });
         this.hdrLoader = new RGBELoader(this.loadingManager);
         this.textureLoader = new TextureLoader(this.loadingManager);
         this.gltfLoader = new GLTFLoader(this.loadingManager);

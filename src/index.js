@@ -67,7 +67,7 @@ function init() {
 
   const promises = [];
   promises.push(LoaderService.loadHDR("./public/assets/env.hdr", renderer));
-  promises.push(LoaderService.loadGLTF("./public/assets/fotoliu-procesat.glb"));
+  promises.push(LoaderService.loadGLTF("./public/assets/fotoliu-600k.glb"));
   promises.push(LoaderService.loadGLTF("./public/assets/materials.glb"));
 
 

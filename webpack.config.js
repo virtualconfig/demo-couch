@@ -12,6 +12,7 @@ module.exports = {
     maxAssetSize: 1024000
   },
   devServer: {
+    host: 'localhost',//your ip address
     publicPath: '/public/',
     compress: true,
     port: 9000,

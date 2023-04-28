@@ -4,19 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="static/ixaria.ico" type="image/x-icon">
   <link rel="stylesheet" href="static/styles/main.css">
-  <title>Ixaria demo</title>
+  <title>Ixaria Demo Couch</title>
 </head>
 
 <body>
-  <div id="loading-screen">
-    <lottie-player src="./public/assets/ixaria.json" background="transparent"  speed="1.5"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-  </div>
+  <p>Se incarca ...</p>
   <div id="floating-menu">
-    <div id="floating-title">Mobila Demo</div>
+    <div id="floating-title">Canapea Demo</div>
 
-    <!-- <div id="submenu-principal" class="submenu" style="display: block;">
+    <div id="submenu-principal" class="submenu" style="display: block;">
       <div id="submenu-title-principal" class="submenu-title">Alege ce doresti sa configurezi</div>
       <div id="icon-holder-principal" class="icon-holder">
         <div id="couch-left" class="icon-menu">
@@ -27,18 +25,18 @@
           <p class="icon-text">Colt Dreapta</p>
           <img class="icon-image" src="public/dublu-intreg-dreapta.png" alt="">
         </div>
-        <div id="couch-parts" class="icon-menu">
+        <!-- <div id="couch-parts" class="icon-menu">
           <p class="icon-text">Module</p>
           <img class="icon-image" src="public/module.png" alt="">
-        </div>
+        </div> -->
         <div id="couch-mats" class="icon-menu">
           <p class="icon-text">Materiale</p>
           <img class="icon-image" src="public/color-palette.png" alt="">
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <!-- <div id="submenu-colt-stanga" class="submenu" style="display: none;">
+    <div id="submenu-colt-stanga" class="submenu" style="display: none;">
       <div id="submenu-title-colt-stanga" class="submenu-title">
         <img src="public/arrow.png" alt="" class="back-arrow" id="back1">
         <span class="back-text">Colt stanga</span>
@@ -48,7 +46,7 @@
           <p class="icon-text">Dublu intreg</p>
           <img class="icon-image" src="public/dublu-intreg-stanga.png" alt="">
         </div>
-        <div id="stg-dublu-scurt" class="icon-menu"  data-value="cornerDoubleShort">
+        <div id="stg-dublu-scurt" class="icon-menu" data-value="cornerDoubleShort">
           <p class="icon-text">Dublu scurt</p>
           <img class="icon-image" src="public/dublu-scurt.png" alt="">
         </div>
@@ -61,8 +59,8 @@
           <img class="icon-image" src="public/simplu-intreg.png" alt="">
         </div>
       </div>
-    </div> -->
-<!-- 
+    </div>
+
     <div id="submenu-colt-dreapta" class="submenu" style="display: none;">
       <div id="submenu-title-colt-dreapta" class="submenu-title">
         <img src="public/arrow.png" alt="" class="back-arrow" id="back2">
@@ -73,20 +71,20 @@
           <p class="icon-text">Dublu intreg</p>
           <img class="icon-image" src="public/dublu-intreg-stanga.png" alt="" style="transform: scaleX(-1);">
         </div>
-        <div id="drpt-dublu-scurt" class="icon-menu"  data-value="cornerDoubleShort">
+        <div id="drpt-dublu-scurt" class="icon-menu" data-value="cornerDoubleShort">
           <p class="icon-text">Dublu scurt</p>
           <img class="icon-image" src="public/dublu-scurt.png" alt="" style="transform: scaleX(-1);">
         </div>
-        <div id="drpt-simplu" class="icon-menu"  data-value="cornerSimple">
+        <div id="drpt-simplu" class="icon-menu" data-value="cornerSimple">
           <p class="icon-text">Simplu</p>
           <img class="icon-image" src="public/simplu.png" alt="" style="transform: scaleX(-1);">
         </div>
-        <div id="drpt-simplu-intreg" class="icon-menu"  data-value="cornerSimpleFull">
+        <div id="drpt-simplu-intreg" class="icon-menu" data-value="cornerSimpleFull">
           <p class="icon-text">Simplu intreg</p>
           <img class="icon-image" src="public/simplu-intreg.png" alt="" style="transform: scaleX(-1);">
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- <div id="submenu-module" class="submenu" style="display: none;">
       <div id="submenu-title-module" class="submenu-title">
@@ -109,32 +107,25 @@
       </div>
     </div> -->
 
-    <div id="submenu-materiale" class="submenu">
+    <div id="submenu-materiale" class="submenu" style="display: none;">
       <div id="submenu-title-materiale" class="submenu-title">
-        <label for="models">Model 3D:</label>
-        <select id="models">
-          <option value="fotoliu-procesat.glb">Fotoliu procesat - 30k</option>
-          <option value="fotoliu-original-100k.glb">Fotoliu original - 100k</option>
-          <option value="fotoliu-original-1m.glb">Fotoliu original - 1M</option>
-          <option value="fotoliu-600k.glb" selected>Fotoliu nou - 600k</option>
-        </select>
-        <!-- <img src="public/arrow.png" alt="" class="back-arrow" id="back4"> -->
-        <!-- <span class="back-text">Materiale</span> -->
+        <img src="public/arrow.png" alt="" class="back-arrow" id="back4">
+        <span class="back-text">Materiale</span>
       </div>
       <div id="icon-holder-materiale" class="icon-holder">
-        <div id="mat-1" class="icon-menu"  data-value="piele1">
+        <div id="mat-1" class="icon-menu" data-value="matLeather1">
           <p class="icon-text">Piele 1</p>
           <img class="icon-image" src="public/leather1.jpg" alt="">
         </div>
-        <div id="mat-2" class="icon-menu" data-value="piele2">
+        <div id="mat-2" class="icon-menu" data-value="matLeather2">
           <p class="icon-text">Piele 2</p>
           <img class="icon-image" src="public/leather2.jpg" alt="">
         </div>
-        <div id="mat-3" class="icon-menu" data-value="stofa1">
+        <div id="mat-3" class="icon-menu" data-value="matLinen1">
           <p class="icon-text">Stofa 1</p>
           <img class="icon-image" src="public/fabric1.jpg" alt="">
         </div>
-        <div id="mat-4" class="icon-menu" data-value="stofa2">
+        <div id="mat-4" class="icon-menu" data-value="matLinen2">
           <p class="icon-text">Stofa 2</p>
           <img class="icon-image" src="public/fabric2.jpg" alt="">
         </div>
@@ -151,62 +142,60 @@
   </div>
 
   <div id="webGL"></div>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="public/bundle.js"></script>
-
   <script>
-    // document.getElementById("couch-left").onclick = (ev) => {
-    //   document.getElementById("submenu-principal").style.display = "none";
-    //   document.getElementById("submenu-colt-stanga").style.display = "block";
-    // }
+    document.getElementById("couch-left").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-colt-stanga").style.display = "block";
+    }
 
-    // document.getElementById("couch-right").onclick = (ev) => {
-    //   document.getElementById("submenu-principal").style.display = "none";
-    //   document.getElementById("submenu-colt-dreapta").style.display = "block";
-    // }
+    document.getElementById("couch-right").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "block";
+    }
 
 
     // document.getElementById("couch-parts").onclick = (ev) => {
     //   document.getElementById("submenu-principal").style.display = "none";
-    //   document.getElementById("submenu-module").style.display = "block";
+    //   // document.getElementById("submenu-module").style.display = "block";
     // }
 
-    // document.getElementById("couch-mats").onclick = (ev) => {
-    //   document.getElementById("submenu-principal").style.display = "none";
-    //   document.getElementById("submenu-materiale").style.display = "block";
-    // }
+    document.getElementById("couch-mats").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "block";
+    }
 
-    // document.getElementById("back1").onclick = (ev) => {
-    //   document.getElementById("submenu-principal").style.display = "block";
-    //   document.getElementById("submenu-colt-stanga").style.display = "none";
-    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
-    //   document.getElementById("submenu-module").style.display = "none";
-    //   document.getElementById("submenu-materiale").style.display = "none";
-    // }
+    document.getElementById("back1").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      // document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
 
-    // document.getElementById("back2").onclick = (ev) => {
-    //   document.getElementById("submenu-principal").style.display = "block";
-    //   document.getElementById("submenu-colt-stanga").style.display = "none";
-    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
-    //   document.getElementById("submenu-module").style.display = "none";
-    //   document.getElementById("submenu-materiale").style.display = "none";
-    // }
+    document.getElementById("back2").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      // document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
 
     // document.getElementById("back3").onclick = (ev) => {
     //   document.getElementById("submenu-principal").style.display = "block";
     //   document.getElementById("submenu-colt-stanga").style.display = "none";
     //   document.getElementById("submenu-colt-dreapta").style.display = "none";
-    //   document.getElementById("submenu-module").style.display = "none";
+    //   // document.getElementById("submenu-module").style.display = "none";
     //   document.getElementById("submenu-materiale").style.display = "none";
     // }
 
-    // document.getElementById("back4").onclick = (ev) => {
-    //   document.getElementById("submenu-principal").style.display = "block";
-    //   document.getElementById("submenu-colt-stanga").style.display = "none";
-    //   document.getElementById("submenu-colt-dreapta").style.display = "none";
-    //   document.getElementById("submenu-module").style.display = "none";
-    //   document.getElementById("submenu-materiale").style.display = "none";
-    // }
+    document.getElementById("back4").onclick = (ev) => {
+      document.getElementById("submenu-principal").style.display = "block";
+      document.getElementById("submenu-colt-stanga").style.display = "none";
+      document.getElementById("submenu-colt-dreapta").style.display = "none";
+      // document.getElementById("submenu-module").style.display = "none";
+      document.getElementById("submenu-materiale").style.display = "none";
+    }
 
   </script>
 
